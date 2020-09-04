@@ -46,7 +46,6 @@ func getNodeDevices() (*kubeletpodresourcesv1alpha1.ListPodResourcesResponse, er
 
 
 func main() {
-	fmt.Println("Hello, playground")
 	podResources, err := getNodeDevices()
 	if err != nil{
 		fmt.Errorf("Error in getting the node devices %v", err)
